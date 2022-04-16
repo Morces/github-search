@@ -9,9 +9,9 @@ i.github {
     margin-left: 25%;
     margin-right: 10%;
 }
-#navbarSupportContent {
+#navbarSupportContent{
     display: flex;
-    align-items: right;
+    flex-direction: row;
     justify-content: right;
     margin-right: 3%;
 }
