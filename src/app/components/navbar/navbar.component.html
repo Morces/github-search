@@ -1,8 +1,21 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="logo">
         <a routerLink="profile" class="navbar-brand">
-            <img src="/home/moringa/Documents/PROJECTS/GitHub-Search/src/assets/github.png" alt="">
+            <i class="bi bi-github"></i>
             <span>GitHub</span>
         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="">Search User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="">Search Repository</a>
+            </li>
+        </ul>
     </div>
 </nav>
