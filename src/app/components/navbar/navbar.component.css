@@ -1,3 +1,17 @@
 a img.me {
     border-radius: 50%;
 }
+
+nav {
+    font-family: 'Poppins', sans-serif;
+}
+i.github {
+    margin-left: 25%;
+    margin-right: 10%;
+}
+#navbarSupportContent {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin-right: 3%;
+}
