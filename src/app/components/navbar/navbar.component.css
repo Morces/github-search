@@ -3,7 +3,11 @@ a img.me {
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
     font-family: 'Poppins', sans-serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 i.github {
     margin-left: 25%;
