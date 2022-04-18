@@ -29,7 +29,7 @@ export class GhSearchService {
 
     interface ApiResponse{
       bio:string,
-      repos:string,
+      repos:number,
       login:string,
       avatar_url:string
       created_on:Date,
