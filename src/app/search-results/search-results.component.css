@@ -1,0 +1,52 @@
+.users img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border-radius: 50%;
+}
+.users {
+    width: 30%;
+    margin: auto;
+    height: auto;
+    margin-top: 0%;
+    margin-left: 5%;
+    color: black;
+    text-align: center;
+    padding: 50px 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+.rows {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+button.back {
+    width: 20%;
+    border-radius: 10px;
+}
+.repos {
+    width: 60%;
+    margin: auto;
+    
+}
+.repos .card {
+    margin-bottom: 2%;
+    margin-right: 5%;
+    color: black;
+    text-align: center;
+    padding: 50px 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+
+
+
