@@ -1,8 +1,21 @@
 span button {
     border: none;
+    background-color: transparent;
+    
+}
+span {
+    background-color: white;
 }
 form {
-    margin-left: 15%;
-    width: 80%;
-    margin: auto;
+    margin-left: 3%;
+    width: 20%;
+        
+}
+form input {
+    background-color: rgb(241, 235, 235);
+    border-radius: 10px;
+    
+}
+button.submit {
+    border-radius: 10px;
 }
