@@ -20,3 +20,6 @@ i.github {
     justify-content: right;
     margin-right: 3%;
 }
+img.me {
+    border-radius: 50%;
+}
