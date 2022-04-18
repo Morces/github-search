@@ -1,12 +1,16 @@
 
 .form {
-    width: 40%;
-    margin-left: 3%;
+    width: 90%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    
 }
-form {
-  width: 50%;
-        
+.profile {
+    width: 30%;
+    float: left;
+    margin: auto;
 }
+
 form input {
     background-color: rgb(241, 235, 235);
     border-radius: 10px;
@@ -17,10 +21,15 @@ button.submit {
 }
 .list {
     margin-top: 2%;
+    /* margin-left: 30%; */
 }
 hr {
-    width: 40%;
-    margin-top: 4%;
+    width: 90%;
+    margin-top: 6%;
+}
+hr.line {
+    margin-top: 1%;
+    width: 100%;
 }
 img.dp {
     border-radius: 50%;
@@ -46,4 +55,31 @@ p.username {
 }
 .info span {
     font-size: 15px;
+}
+.myrepos {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+h6.my {
+    text-align: center;
+}
+span.pub {
+    border: 1px  solid rgb(172, 167, 167);
+    border-radius: 20px;
+    padding: 1px 5px;
+    font-size: 14px;
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+.myrepos p a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+}
+.cardy.card {
+    border-radius: 5px;
+    
 }
