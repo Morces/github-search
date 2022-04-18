@@ -1,4 +1,8 @@
-import { Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
+import { GhSearchService } from './../../gh-search.service';
+import { User } from './../../user';
+import { Component, OnInit, Output } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -7,15 +11,30 @@ import { Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-   @Input() searchName!: string;
-   @Output() searchOutput = new EventEmitter()
-  constructor() { }
+   
+  user!: User;
+  username!: string;
+  GhSearchService!: GhSearchService;
+  public showContents = true;
+  public showData = false;
+  
 
   search() {
-    this.searchOutput.emit(this.searchName);
-    this.searchName = "";
+    this.GhSearchService.getData(this.username);
+    this.showContents = false;
+    this.showData = true;
   }
 
+  showUserInput(hideInput: boolean){
+    this.showContents = hideInput;
+    this.showData = false;
+  }
+
+
+
+  constructor(GhSearchService:GhSearchService) {
+    this.GhSearchService = GhSearchService;
+   }
 
   ngOnInit() {
   }

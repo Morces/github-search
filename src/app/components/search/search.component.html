@@ -1,8 +1,8 @@
-<div class="form">
+<div class="form" *ngIf="showContents">
     <div class="profile">
         <div class="input">
-                <form >
-                    <input type="text" class="form-control search" placeholder="Search GitHub username..." aria-label="search" aria-describedby="basic-addon1">
+                <form (ngSubmit)="search()" #searchForm="ngForm" name="searchForm">
+                    <input type="text" class="form-control search" [(ngModel)]="username" name="username" placeholder="Search GitHub username..." aria-label="search" aria-describedby="basic-addon1">
                     <br>
                     <button type="submit" class="btn btn-success submit">Search GitHub & Repositories</button>
                 </form>
@@ -128,6 +128,7 @@
         </div>
     </div>
 </div>
+<app-search-results *ngIf="showData" (toggleBack)="showUserInput($event)"></app-search-results>
 
 
 

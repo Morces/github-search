@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { GhSearchService } from './../gh-search.service';
+import { User } from './../user';
+import { NgForm } from '@angular/forms';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-search-results',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchResultsComponent implements OnInit {
 
-  constructor() { }
+  user!:User;
+  repoDatas:any = [];
+  GhSearchService!: GhSearchService;
+  hideInput!:boolean;
 
-  ngOnInit(): void {
+  constructor(GhSearchService:GhSearchService) { 
+    this.GhSearchService = GhSearchService;
+  }
+  @Output() toggleBack = new EventEmitter();
+
+  back(){
+    this.hideInput = true;
+    this.toggleBack.emit(this.hideInput)
+  }
+
+  ngOnInit() {
+    this.user = this.GhSearchService.user;
+    this.repoDatas = this.GhSearchService.repoDetails;
   }
 
 }

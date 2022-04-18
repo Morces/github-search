@@ -4,7 +4,12 @@
 
 export const environment = {
   production: false
+
+  
 };
+
+apiUrl:"https://api.github.com"
+// "https://api.github.com/users/users/"
 
 /*
  * For easier debugging in development mode, you can import the following file

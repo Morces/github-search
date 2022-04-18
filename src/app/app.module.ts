@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule} from '@angular/forms'
+import { GhSearchService} from './gh-search.service'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http'
@@ -18,9 +19,10 @@ import { SearchResultsComponent } from './search-results/search-results.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [GhSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
