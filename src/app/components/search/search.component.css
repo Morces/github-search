@@ -10,6 +10,10 @@
     float: left;
     margin: auto;
 }
+.linking a {
+    text-decoration: none;
+    margin-left: 1%;
+}
 
 form input {
     background-color: rgb(241, 235, 235);

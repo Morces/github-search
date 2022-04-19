@@ -1,10 +1,14 @@
 <div class="form" *ngIf="showContents">
     <div class="profile">
+        <div class="linking">
+            <a routerLink="/Users" routerLinkActive="active">Search Users and Repos</a>
+            <router-outlet></router-outlet>
+        </div>
         <div class="input">
                 <form (ngSubmit)="search()" #searchForm="ngForm" name="searchForm">
                     <input type="text" class="form-control search" [(ngModel)]="username" name="username" placeholder="Search GitHub username..." aria-label="search" aria-describedby="basic-addon1">
                     <br>
-                    <button type="submit" class="btn btn-success submit">Search GitHub & Repositories</button>
+                    <button type="submit" class="btn btn-success submit">Search GitHub Users & Repositories</button>
                 </form>
         </div>
     <div class="list">
