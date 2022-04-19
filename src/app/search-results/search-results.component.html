@@ -5,12 +5,12 @@
         <h4>{{user.login}}</h4>
         <img src="{{GhSearchService.user.avatar_url}}">
         <p class="bio">{{user.bio}}</p>
-        <p>Joined on: {{user.created_on }}</p>
-        <p>Last update on: {{user.updated_on}}</p>
+        <p>Joined on: {{user.created_on | date}}</p>
+        <p>Last update on: {{user.updated_on | date}}</p>
         <p>Number of repositories: {{user.repos}}</p>
         <p><a href="{{user.html_url}}">View profile</a></p>
         <div class="back">
-            <button class="btn btn-success back" (click)="back()">Back</button>
+            <button class="btn btn-success back" (click)="back()"><i class="bi bi-arrow-left-circle"></i> Back</button>
         </div>
     </div>
 
@@ -19,10 +19,11 @@
         <div class="card" *ngFor="let repoData of repoDatas">
         <h4 class="card-title"><a href="{{repoData.html_url}}" target="_blank">{{repoData.name}}</a></h4>
                 <div class="card-body">
-                    <p>Created on: {{repoData.created_on}}</p>
+                    <p>Created on: {{repoData.created_on | date}}</p>
                     <p>Description: {{repoData.description}}</p>
                     <p>Clone: <a appHighlight href="{{repoData.clone_url}}"> {{repoData.clone_url}}</a></p>
                     <p><small>Language: {{repoData.language}}</small></p>
+                    <p><small>Last updated: {{repoData.updated_on}} Days ago.</small></p>
                 </div>
         </div>
         <br>

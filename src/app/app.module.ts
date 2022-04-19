@@ -9,6 +9,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { HighlightDirective } from './highlight.directive';
+import { DaysPipe } from './days.pipe';
+import { DateFormatPipe } from './date-format.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HighlightDirective } from './highlight.directive';
     NavbarComponent,
     SearchComponent,
     SearchResultsComponent,
-    HighlightDirective
+    HighlightDirective,
+    DaysPipe,
+    DateFormatPipe
   ],
   imports: [
     BrowserModule,
