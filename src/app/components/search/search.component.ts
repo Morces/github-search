@@ -1,6 +1,6 @@
 import { GhSearchService } from './../../gh-search.service';
 import { User } from './../../user';
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
@@ -29,9 +29,7 @@ export class SearchComponent implements OnInit {
     this.showContents = hideInput;
     this.showData = false;
   }
-
-
-
+  
   constructor(GhSearchService:GhSearchService) {
     this.GhSearchService = GhSearchService;
    }
